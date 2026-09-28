@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks Calculator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Marks Calculator</h1>
+
+        <form method="POST">
+
+            <label>Student Name</label>
+            <input type="text" name="name"
+                   placeholder="Enter student name">
+
+            <label>Hindi</label>
+            <input type="number" name="hindi"
+                   placeholder="0 - 100">
+
+            <label>English</label>
+            <input type="number" name="english"
+                   placeholder="0 - 100">
+
+            <label>Math</label>
+            <input type="number" name="math"
+                   placeholder="0 - 100">
+
+            <label>Science</label>
+            <input type="number" name="science"
+                   placeholder="0 - 100">
+
+            <label>Computer</label>
+            <input type="number" name="computer"
+                   placeholder="0 - 100">
+
+            <button type="submit">Calculate Result</button>
+
+            <button type="reset">Clear Form</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
