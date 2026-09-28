@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="result-box">
+
+        <h1>Student Result</h1>
+
+        <h2>{{ name }}</h2>
+
+        <div class="subjects">
+            <p>Hindi: {{ hindi }}</p>
+            <p>English: {{ english }}</p>
+            <p>Math: {{ math }}</p>
+            <p>Science: {{ science }}</p>
+            <p>Computer: {{ computer }}</p>
+        </div>
+
+        <div class="result-item">
+            <span>Total Marks</span>
+            <strong>{{ total }} / 500</strong>
+        </div>
+
+        <div class="result-item">
+            <span>Percentage</span>
+            <strong>{{ percentage }}%</strong>
+        </div>
+
+        <div class="result-item">
+            <span>Grade</span>
+            <strong>{{ grade }}</strong>
+        </div>
+
+        <div class="result-item">
+            <span>Result</span>
+            <strong>{{ result }}</strong>
+        </div>
+
+        <br>
+
+        <a href="/">Calculate Again</a>
+
+        <br><br>
+
+        <button onclick="window.print()">
+            Print Result
+        </button>
+
+    </div>
+
+</body>
+</html>
